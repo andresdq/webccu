@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
 			
 		<title>cantantes catolicos unidos</title>
 	</head>
@@ -50,6 +50,14 @@
 				</ol>
 			</nav>
 						
+			<div class="alert alert-warning alert-dimissible fade show" role="alert">
+				<a href='https://www.facebook.com/JuanitaMensajes'>
+				<img src='https://scontent.fclo8-1.fna.fbcdn.net/v/t1.0-9/84845338_120848959466973_6266684960803913728_o.jpg?_nc_cat=102&_nc_sid=e3f864&_nc_ohc=JrFnKGsbx40AX9gmIhA&_nc_ht=scontent.fclo8-1.fna&oh=44efd1d68904ebfb693674f573e90a5c&oe=5FB0B826'
+				class='btn d-block w-100' alt='imagen juanita mensajes facebook'>
+				</a>
+				<p></p><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>		
+						
 			<div class="row justify-content-center">
 				<div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-3">
 					<p><h2>La Unión Hace la Fuerza</h2>
@@ -66,7 +74,7 @@
 				</div>
 				<div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-3">
 					<p><h2>Justicia Colaborativa</h2>
-		Muchas empresas exitosas, lo son en realidad por su cultura, por lo que proyectan y enseñan a sus colaboradores; y es que en nuestra organización, estamos tan convencidos de eso, que el propio funcionamiento de los procesos de nuestra organización está diseñado de esta manera, la tecnología detrás de los procesos, la forma en cómo se consiguen los recursos, la forma en cómo se invierten y sobre todo la forma en cómo se reparten están inspirados en la colaboración y la justicia.
+		Muchas empresas exitosas, lo son en realidad por su cultura, por lo que proyectan y enseñan a sus colaboradores; y es que en Cantantes Católicos Unidos, estamos tan convencidos de eso, que el propio funcionamiento de los procesos de nuestra organización está diseñado de esta manera, la tecnología detrás de los procesos, la forma en cómo se consiguen los recursos, la forma en cómo se invierten y sobre todo la forma en cómo se reparten están inspirados en la colaboración y la justicia.
 					</p>
 				</div>	
 			</div>
@@ -137,16 +145,15 @@
 					<p>"Deseo Glorificar a Dios y tocar corazones a través del don que recibí.".
 					</p>
 				</div>				
-			</div>					
+			</div>	
+					<!-- Button trigger modal -->
+			<div class='row row-center'>
+				<button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#mimodal">
+			  <h3 class='font-italic'>Suscribete a nuestras noticias!!!!</h3>
+				</button>
+			</div>
 		</div>
 		
-		<div class='container'>
-			<a href='https://www.facebook.com/JuanitaMensajes'>
-			<img src='https://scontent.fclo8-1.fna.fbcdn.net/v/t1.0-9/84845338_120848959466973_6266684960803913728_o.jpg?_nc_cat=102&_nc_sid=e3f864&_nc_ohc=JrFnKGsbx40AX9gmIhA&_nc_ht=scontent.fclo8-1.fna&oh=44efd1d68904ebfb693674f573e90a5c&oe=5FB0B826'
-			class='btn d-block w-100' alt='imagen juanita mensajes facebook'>
-			</a>
-		</div>
-
 		<footer>
 			<div class='d-flex justify-content-between'>
 				<div class='col-sn-4 d-flex flex-column'>
@@ -177,13 +184,53 @@
 			</div>
 		</footer>
 
+		<!-- Modal -->
+		<div class="modal fade" id="mimodal" tabindex="-1" aria-labelledby="mimodallabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="mimodallabel">Unos pocos datos...</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<form>
+					<div class='form-row'>
+						<div class='form-group col-sm-6'>
+							<label for='nombre'>Nombre</label>
+							<input type='text' class='form-control' id='nombre' placeholder='Ingrese su nombre'>
+						</div>
+					</div>
+					<div class='form-row'>
+						<div class='form-group col-sm-6'>
+							<label for='email'>Email</label>
+							<input type='email' class='form-control' id='email' placeholder='Ingrese su email'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='form-check'>
+							<input class='form-check-input' type='checkbox' id='gridCheck'>
+							<label class='form-check-label' for='gridCheck'>
+							Quiero que me contacten
+							</label>
+						</div>
+					</div>
+				</form>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				<button type="button" class="btn btn-primary">Enviar</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
- 
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/popper.js/dist/popper.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	</body>
 </html>
 
